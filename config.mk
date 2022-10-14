@@ -2,7 +2,7 @@
 VERSION = 5.2
 
 # paths
-PREFIX = /usr/local
+PREFIX = ~/.local
 MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/X11R6/include
@@ -15,9 +15,6 @@ XINERAMAFLAGS = -DXINERAMA
 # freetype
 FREETYPELIBS = -lfontconfig -lXft
 FREETYPEINC = /usr/include/freetype2
-# OpenBSD (uncomment)
-#FREETYPEINC = $(X11INC)/freetype2
-#MANPREFIX = ${PREFIX}/man
 
 # includes and libs
 INCS = -I$(X11INC) -I$(FREETYPEINC)
