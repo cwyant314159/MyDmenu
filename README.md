@@ -24,3 +24,15 @@ header file.
 The following section describes applied patches and any further modifications
 using those patches.
 
+### printindex
+
+These patches were applied to get the index of the selected option rather than
+the selected option.
+
+- dmenu-printindex-5.0.diff
+- dmenu-printindex-cole.diff
+
+The `-cole` variant of the patch was created since the original patch failed to
+apply on my build. I have not figured out why. The problem was in the 
+`readstdin(void)` function.
+
