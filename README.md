@@ -36,3 +36,16 @@ The `-cole` variant of the patch was created since the original patch failed to
 apply on my build. I have not figured out why. The problem was in the 
 `readstdin(void)` function.
 
+### numbers
+
+These patches were applied to get an m/n numbering on the right side of the 
+dmenu prompt
+
+- dmenu-numbers-20220512-28fb3e2.diff
+
+This patch would only successfully apply when using the three way merge option
+of `git apply`.
+
+```
+git apply -3 patches/dmenu-numbers-20220512-28fb3e2.diff
+```
